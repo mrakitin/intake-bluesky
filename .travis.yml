@@ -33,6 +33,5 @@ script:
   - set -e
   - make -C docs html  # Build the documentation.
   # Pubish the documentation to GitHub Pages.
-  - pip install doctr
   - doctr deploy --built-docs docs/build/html --deploy-repo NSLS-II/NSLS-II.github.io intake-bluesky
   - doctr deploy --built-docs docs/build/html --deploy-repo bluesky/bluesky.github.io intake-bluesky
